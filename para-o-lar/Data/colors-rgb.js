@@ -149,3 +149,14 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// Resposta
+
+let listaDeObjetos = obj[0] 
+let valor = Object.values(listaDeObjetos)
+let chave = Object.keys(listaDeObjetos)
+
+for(let i=0; i < chave.length; i++){
+    console.log(`${chave[i]} RGB: ${valor[i]}`)}
+
+    // Utilizando o método de chave e valor... Onde a primeira parte é referente a chave e a segunda ao valor atribuido.

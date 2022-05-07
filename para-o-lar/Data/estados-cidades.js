@@ -5732,3 +5732,16 @@ const estados = [
         ]
       }
     ]
+// Resposta
+
+function listaDeCidades(sigla){
+  for (let index = 0; index < estados.length; index++) {
+    const element = estados[index];
+    if (element.sigla == sigla) {
+      for (let j = 0; j < element.cidades.length; j++) {
+        console.log(element.cidades[j])        
+      }
+    }
+  }
+}
+listaDeCidades("SP")
